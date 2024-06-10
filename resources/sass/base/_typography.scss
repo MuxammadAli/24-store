@@ -1,0 +1,30 @@
+.section-title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 24px;
+  color: $dark;
+  display: inline-block;
+
+  @include mq("tablet", max) {
+    font-size: 20px;
+  }
+
+  position: relative;
+
+  img {
+    position: absolute;
+    top: -10px;
+    right: -50px;
+  }
+}
+
+.all_link {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+  
+  &:hover {
+    color: $warning;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,940 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#10182b">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#10182b">
+  <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+  <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#10182b">
+  
+  <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="libs/swiper/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+  <title>27seven</title>
+</head>
+
+<body>
+  <div class="top-navbar">
+      <div class="container">
+          <a href="index.html" class="navbar-brand">
+              <img src="img/brand-logo.svg" alt="Logo">
+          </a>
+          <div class="top-navbar--right">
+              <a href="tel:+998999999999" class="call-centre">Call-центр: +998 99 999 99 99</a>
+  
+              <div class="lang">
+                  <span>Ру <i class="far fa-chevron-down"></i></span>
+                  <div class="lang-list">
+                      <a href="#uz">O'z</a>
+                      <a href="#en">Eng</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <nav class="navbar">
+      <div class="container position-relative h-100">
+          <div class="navbar-inner h-100">
+              <div class="mobile-menu h-100">
+                  <button class="navbar-close d-flex d-lg-none" type="button">
+                      <i class="fal fa-times fa-times fa-2x"></i>
+                  </button>
+  
+                  <a class="big-menu-dropdown-trigger" href="#0"><img src="img/bars.svg" alt="">
+                      <div class="menu-open">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      </div>
+                      <p>Все категории</p>
+                  </a>
+  
+                  <div class="search d-lg-inline-block d-none">
+                      <form action="">
+                          <input type="text" placeholder="Поиск товаров...">
+                          <button type="submit"><i class="far fa-search"></i></button>
+                      </form>
+                  </div>
+  
+                  <div class="d-flex justify-content-between align-items-center widjets">
+                      <button class="sign-in" type="button" data-target="#sing-in-1" data-toggle="modal">
+                          <!-- <p>Войти</p> -->
+                          <i class="fas fa-user"></i>
+                          <span class="">Eshonov Eshmat</span>
+                      </button>
+                      <div class="favourite mx-4 d-lg-inline-block d-none">
+                          <img src="img/heart.svg" alt="heart icon">
+                          <span>
+                              <input type="text" disabled value="3">
+                          </span>
+                      </div>
+                      <button data-target="#basket" data-toggle="modal" type="button" class="cart d-lg-inline-block d-none bg-transparent border-0 p-0">
+                          <img src="img/cart.svg" alt="heart icon">
+                          <span>
+                              <input type="text" disabled value="2">
+                          </span>
+                      </button>
+                  </div>
+  
+                  <div class="navmenu d-lg-none mt-3 border-top">
+                      <div class="py-2 border-bottom"><a href="catalog.html">Акции и скидки</a></div>
+                      <div class="py-2 border-bottom"><a href="catalog.html">Еда</a></div>
+                      <div class="py-2 border-bottom"><a href="catalog.html">Напиток</a></div>
+                      <div class="py-2 border-bottom"><a href="catalog.html">Фрукты</a></div>
+                      <div class="py-2 border-bottom"><a href="catalog.html">Одежда</a></div>
+                      <div class="py-2 border-bottom"><a href="catalog.html">Телефоны и гаджеты</a></div>
+                      <div class="py-2 border-bottom"><a href="catalog.html">Компьютеры</a></div>
+                      <div class="py-2 border-bottom"><a href="catalog.html">Бытовая техника</a></div>
+                  </div>
+  
+                  <a href="tel:+998999999999" class="call-centre">Call-центр: +998 99 999 99 99</a>
+              </div>
+  
+              <div class="d-flex justify-content-md-between align-items-center flex-grow-1 d-lg-none">
+                  <button type="button" class="sign-in d-lg-flex d-none" data-target="#sing-in" data-toggle="modal">
+                      <!-- <p>Войти</p> -->
+                      <i class="fas fa-user"></i>
+                      <span class="">Eshonov Eshmat</span>
+                  </button>
+  
+                  <div class="search d-md-inline-block d-none">
+                      <form action="">
+                          <input type="text" placeholder="Поиск товаров...">
+                          <button type="submit"><i class="far fa-search"></i></button>
+                      </form>
+                  </div>
+                  <div class="favourite">
+                      <img src="img/heart.svg" alt="heart icon">
+                      <span>
+                          <input type="text" disabled value="3">
+                      </span>
+                  </div>
+                  <button data-target="#basket" data-toggle="modal" type="button" class="cart mx-4 bg-transparent border-0 p-0">
+                      <img src="img/cart.svg" alt="heart icon">
+                      <span>
+                          <input type="text" disabled value="2">
+                      </span>
+                  </button>
+              </div>
+  
+              <button class="navbar-toggler p-0 d-flex d-lg-none ml-auto" type="button">
+                  <div class="hamburger">
+                      <div class="hamburger-box">
+                          <div class="hamburger-inner"></div>
+                      </div>
+                  </div>
+              </button>
+  
+              <div class="big-menu-dropdown-wrapper">
+                  <nav class="big-menu-dropdown">
+                      <a href="#0" class="big-menu-close"><i class="fal fa-times"></i></a>
+                      <ul class="big-menu-dropdown-content">
+                          <li class="has-children">
+                              <a href="#" class="link-item"><i class="far fa-mobile"></i> Электроника</a>
+                              <ul class="big-menu-secondary-dropdown is-hidden">
+                                  <li class="go-back"><a href="#0">Категория</a></li>
+                                  <li class="has-children">
+                                      <a class="d-lg-block d-none" href="catalog.html">Смартфоны и смарт-часы</a>
+                                      <a class="link-item d-lg-none" href="#00">Смартфоны и смарт-часы</a>
+  
+                                      <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Смартфоны и смарт-часы</a></li>
+                                          <li><a href="product.html">Смартфоны</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                      </ul>
+                                  </li>
+                                  <li class="has-children">
+                                      <a class="d-lg-block d-none" href="catalog.html">Телевизоры и видеотехника</a>
+                                      <a class="link-item d-lg-none" href="#00">Телевизоры и видеотехника</a>
+  
+                                      <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Телевизоры и видеотехника</a></li>
+                                          <li><a href="product.html">Телевизоры</a></li>
+                                          <li><a href="product.html">Медиаплееры</a></li>
+                                          <li><a href="product.html">Blu-rey плееры</a></li>
+                                          <li><a href="product.html">DVD плееры</a></li>
+                                          <li><a href="product.html">Медиаплееры</a></li>
+                                          <li><a href="product.html">Цифровое и спутниковое ТВ</a></li>
+                                          <li><a href="product.html">Аксессуары для телевизоров</a></li>
+                                      </ul>
+                                  </li>
+                                  <li class="has-children">
+                                      <a class="d-lg-block d-none" href="catalog.html">Смартфоны и смарт-часы</a>
+                                      <a class="link-item d-lg-none" href="#00">Смартфоны и смарт-часы</a>
+  
+                                      <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Смартфоны и смарт-часы</a></li>
+                                          <li><a href="product.html">Смартфоны</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                      </ul>
+                                  </li>
+                                  <li class="has-children">
+                                      <a class="d-lg-block d-none" href="catalog.html">Смартфоны и смарт-часы</a>
+                                      <a class="link-item d-lg-none" href="#00">Смартфоны и смарт-часы</a>
+  
+                                      <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Смартфоны и смарт-часы</a></li>
+                                          <li><a href="product.html">Смартфоны</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                      </ul>
+                                  </li>
+                                  <li class="has-children">
+                                      <a class="d-lg-block d-none" href="catalog.html">Смартфоны и смарт-часы</a>
+                                      <a class="link-item d-lg-none" href="#00">Смартфоны и смарт-часы</a>
+  
+                                      <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Смартфоны и смарт-часы</a></li>
+                                          <li><a href="product.html">Смартфоны</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                      </ul>
+                                  </li>
+                                  <li class="has-children">
+                                      <a class="d-lg-block d-none" href="catalog.html">Смартфоны и смарт-часы</a>
+                                      <a class="link-item d-lg-none" href="#00">Смартфоны и смарт-часы</a>
+  
+                                      <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Смартфоны и смарт-часы</a></li>
+                                          <li><a href="product.html">Смартфоны</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                      </ul>
+                                  </li>
+                                  <li class="has-children">
+                                      <a class="d-lg-block d-none" href="catalog.html">Смартфоны и смарт-часы</a>
+                                      <a class="link-item d-lg-none" href="#00">Смартфоны и смарт-часы</a>
+  
+                                      <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Смартфоны и смарт-часы</a></li>
+                                          <li><a href="product.html">Смартфоны</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="has-children">
+                              <a href="#" class="link-item"><i class="far fa-desktop-alt"></i> Бытовая техника</a>
+  
+                              <ul class="big-menu-secondary-dropdown is-hidden">
+                                  <li class="go-back"><a href="#0">Категория</a></li>
+                                  <li class="has-children">
+                                      <a class="d-lg-block d-none" href="catalog.html">Смартфоны и смарт-часы</a>
+                                      <a class="link-item d-lg-none" href="#00">Смартфоны и смарт-часы</a>
+  
+                                      <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Смартфоны и смарт-часы</a></li>
+                                          <li><a href="product.html">Смартфоны</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="has-children">
+                              <a href="#" class="link-item"><i class="far fa-laptop"></i> Компьютерная техника</a>
+  
+                              <ul class="big-menu-secondary-dropdown is-hidden">
+                                  <li class="go-back"><a href="#0">Категория</a></li>
+                                  <li class="has-children">
+                                      <a class="d-lg-block d-none" href="catalog.html">Смартфоны и смарт-часы</a>
+                                      <a class="link-item d-lg-none" href="#00">Смартфоны и смарт-часы</a>
+  
+                                      <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Смартфоны и смарт-часы</a></li>
+                                          <li><a href="product.html">Смартфоны</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="has-children">
+                              <a href="#" class="link-item"><i class="far fa-building"></i> Строительство и ремонт</a>
+  
+                              <ul class="big-menu-secondary-dropdown is-hidden">
+                                  <li class="go-back"><a href="#0">Категория</a></li>
+                                  <li class="has-children">
+                                      <a class="d-lg-block d-none" href="catalog.html">Смартфоны и смарт-часы</a>
+                                      <a class="link-item d-lg-none" href="#00">Смартфоны и смарт-часы</a>
+  
+                                      <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Смартфоны и смарт-часы</a></li>
+                                          <li><a href="product.html">Смартфоны</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="has-children">
+                              <a href="#" class="link-item"><i class="far fa-baby-carriage"></i> Детские товары</a>
+  
+                              <ul class="big-menu-secondary-dropdown is-hidden">
+                                  <li class="go-back"><a href="#0">Категория</a></li>
+                                  <li class="has-children">
+                                      <a class="d-lg-block d-none" href="catalog.html">Смартфоны и смарт-часы</a>
+                                      <a class="link-item d-lg-none" href="#00">Смартфоны и смарт-часы</a>
+  
+                                      <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Смартфоны и смарт-часы</a></li>
+                                          <li><a href="product.html">Смартфоны</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="has-children">
+                              <a href="#" class="link-item"><i class="far fa-table-tennis"></i> Спорт и отдых</a>
+  
+                              <ul class="big-menu-secondary-dropdown is-hidden">
+                                  <li class="go-back"><a href="#0">Категория</a></li>
+                                  <li class="has-children">
+                                      <a class="d-lg-block d-none" href="catalog.html">Смартфоны и смарт-часы</a>
+                                      <a class="link-item d-lg-none" href="#00">Смартфоны и смарт-часы</a>
+  
+                                      <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Смартфоны и смарт-часы</a></li>
+                                          <li><a href="product.html">Смартфоны</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="has-children">
+                              <a href="#" class="link-item"><i class="far fa-car"></i> Авто</a>
+  
+                              <ul class="big-menu-secondary-dropdown is-hidden">
+                                  <li class="go-back"><a href="#0">Категория</a></li>
+                                  <li class="has-children">
+                                      <a class="d-lg-block d-none" href="catalog.html">Смартфоны и смарт-часы</a>
+                                      <a class="link-item d-lg-none" href="#00">Смартфоны и смарт-часы</a>
+  
+                                      <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Смартфоны и смарт-часы</a></li>
+                                          <li><a href="product.html">Смартфоны</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="has-children">
+                              <a href="#" class="link-item"><i class="far fa-home"></i> Дача</a>
+  
+                              <ul class="big-menu-secondary-dropdown is-hidden">
+                                  <li class="go-back"><a href="#0">Категория</a></li>
+                                  <li class="has-children">
+                                      <a class="d-lg-block d-none" href="catalog.html">Смартфоны и смарт-часы</a>
+                                      <a class="link-item d-lg-none" href="#00">Смартфоны и смарт-часы</a>
+  
+                                      <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Смартфоны и смарт-часы</a></li>
+                                          <li><a href="product.html">Смартфоны</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="has-children">
+                              <a href="#" class="link-item"><i class="far fa-cut"></i> Красота</a>
+  
+                              <ul class="big-menu-secondary-dropdown is-hidden">
+                                  <li class="go-back"><a href="#0">Категория</a></li>
+                                  <li class="has-children">
+                                      <a class="d-lg-block d-none" href="catalog.html">Смартфоны и смарт-часы</a>
+                                      <a class="link-item d-lg-none" href="#00">Смартфоны и смарт-часы</a>
+  
+                                      <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Смартфоны и смарт-часы</a></li>
+                                          <li><a href="product.html">Смартфоны</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="has-children">
+                              <a href="#" class="link-item"><i class="far fa-tablets"></i> Здоровье</a>
+  
+                              <ul class="big-menu-secondary-dropdown is-hidden">
+                                  <li class="go-back"><a href="#0">Категория</a></li>
+                                  <li class="has-children">
+                                      <a class="d-lg-block d-none" href="catalog.html">Смартфоны и смарт-часы</a>
+                                      <a class="link-item d-lg-none" href="#00">Смартфоны и смарт-часы</a>
+  
+                                      <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Смартфоны и смарт-часы</a></li>
+                                          <li><a href="product.html">Смартфоны</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="has-children">
+                              <a href="#" class="link-item"><i class="far fa-shopping-cart"></i> Продукты</a>
+  
+                              <ul class="big-menu-secondary-dropdown is-hidden">
+                                  <li class="go-back"><a href="#0">Категория</a></li>
+                                  <li class="has-children">
+                                      <a class="d-lg-block d-none" href="catalog.html">Смартфоны и смарт-часы</a>
+                                      <a class="link-item d-lg-none" href="#00">Смартфоны и смарт-часы</a>
+  
+                                      <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Смартфоны и смарт-часы</a></li>
+                                          <li><a href="product.html">Смартфоны</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="has-children">
+                              <a href="#" class="link-item"><i class="far fa-box-open"></i> Гардероб</a>
+  
+                              <ul class="big-menu-secondary-dropdown is-hidden">
+                                  <li class="go-back"><a href="#0">Категория</a></li>
+                                  <li class="has-children">
+                                      <a class="d-lg-block d-none" href="catalog.html">Смартфоны и смарт-часы</a>
+                                      <a class="link-item d-lg-none" href="#00">Смартфоны и смарт-часы</a>
+  
+                                      <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Смартфоны и смарт-часы</a></li>
+                                          <li><a href="product.html">Смартфоны</a></li>
+                                          <li><a href="product.html">Умные часы и браслеты</a></li>
+                                          <li><a href="product.html">Кнопочные телефоны</a></li>
+                                          <li><a href="product.html">Аксессуары для телефонов</a></li>
+                                          <li><a href="product.html">Чехлы</a></li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+  
+          <div class="search d-inline-block d-md-none w-100 mx-auto mt-2">
+              <form action="">
+                  <input type="text" placeholder="Поиск товаров...">
+                  <button type="submit"><i class="far fa-search"></i></button>
+              </form>
+          </div>
+      </div>
+  </nav>
+  
+  <div class="navbar-second">
+      <!-- Nav -->
+      <div class="container">
+          <ul class="nav">
+              <li class="nav-item"><a class="nav-link" href="catalog.html">Акции и скидки</a></li>
+              <li class="nav-item"><a class="nav-link" href="catalog.html">Еда</a></li>
+              <li class="nav-item"><a class="nav-link" href="catalog.html">Напиток</a></li>
+              <li class="nav-item"><a class="nav-link" href="catalog.html">Фрукты</a></li>
+              <li class="nav-item"><a class="nav-link" href="catalog.html">Одежда</a></li>
+              <li class="nav-item"><a class="nav-link" href="catalog.html">Телефоны и гаджеты</a></li>
+              <li class="nav-item"><a class="nav-link" href="catalog.html">Компьютеры</a></li>
+              <li class="nav-item"><a class="nav-link" href="catalog.html">Бытовая техника</a></li>
+          </ul>
+      </div>
+  </div>
+
+  <main>
+    <div class="container pt-md-4 pt-lg-5 pt-2">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+        <li class="breadcrumb-item active">Еда</li>
+      </ul>
+    </div>
+
+    <section class="section-order">
+      <div class="container">
+        <div class="order-steps">
+          <a href="order.html" class="order-steps__item is-active">
+            1 Этап
+          </a>
+          <a href="order2.html" class="order-steps__item">
+            2 Этап
+          </a>
+          <a href="order3.html" class="order-steps__item">
+            3 Этап
+          </a>
+        </div>
+
+        <div class="bg-white rounded p-lg-4 p-3 mt-5">
+          <h4>Корзина</h4>
+
+          <div class="border-bottom mt-4">
+            <div class="row">
+              <div class="col-lg-6 col-4">
+                <p class="text-secondary">Товар</p>
+              </div>
+              <div class="col-lg-3 col-4">
+                <p class="text-secondary">Кол-во</p>
+              </div>
+              <div class="col-lg-3 col-4">
+                <p class="text-secondary text-right">Итог-во</p>
+              </div>
+            </div>
+          </div>
+          <div class="cart-product py-3 border-bottom">
+            <div class="row">
+              <div class="col-lg-6 col-md-4 d-flex align-items-md-end flex-md-row flex-column">
+                <div class="cart-product__img"><img src="img/product-1.png" alt="product image"></div>
+                <h5 class="cart-product__title mt-3"><a href="product-item.html">Drink Fanta sugar free 1.5L</a></h5>
+              </div>
+              <div class="col-lg-3 col-md-4 d-flex align-items-end justify-content-md-start justify-content-center">
+                <div class="product-count mb-0">
+                  <span class="decrement">
+                    <i class="fal fa-minus"></i>
+                  </span>
+                  <input type="text" value="1" min="0" readonly="readonly">
+                  <span class="increment">
+                    <i class="fal fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-4 d-flex align-items-md-end flex-md-column justify-content-md-between cart-product__footer">
+                <div class="d-flex flex-column cart-product__icons">
+                  <button class="delete-product"><i class="far fa-times"></i></button>
+                  <!-- <button class="add-product"><i class="far fa-heart"></i></button> -->
+                </div>
+                <h5 class="cart-product__price">12 320 сум</h5>
+              </div>
+            </div>
+          </div>
+          <div class="cart-product py-3 border-bottom">
+            <div class="row">
+              <div class="col-lg-6 col-md-4 d-flex align-items-md-end flex-md-row flex-column">
+                <div class="cart-product__img"><img src="img/product-3.png" alt="product image"></div>
+                <h5 class="cart-product__title mt-3"><a href="product-item.html">Banana Royal mini, weight 1kg</a></h5>
+              </div>
+              <div class="col-lg-3 col-md-4 d-flex align-items-end justify-content-md-start justify-content-center">
+                <div class="product-count mb-0">
+                  <span class="decrement">
+                    <i class="fal fa-minus"></i>
+                  </span>
+                  <input type="text" value="1" min="0" readonly="readonly">
+                  <span class="increment">
+                    <i class="fal fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-4 d-flex align-items-md-end flex-md-column justify-content-md-between cart-product__footer">
+                <div class="d-flex flex-column cart-product__icons">
+                  <button class="delete-product"><i class="far fa-times"></i></button>
+                  <!-- <button class="add-product"><i class="far fa-heart"></i></button> -->
+                </div>
+                <h5 class="cart-product__price">24 000 сум</h5>
+              </div>
+            </div>
+          </div>
+          <div class="cart-product py-3 border-bottom">
+            <div class="row">
+              <div class="col-lg-6 col-md-4 d-flex align-items-md-end flex-md-row flex-column">
+                <div class="cart-product__img"><img src="img/product-1.png" alt="product image"></div>
+                <h5 class="cart-product__title mt-3"><a href="product-item.html">Drink Fanta sugar free 1.5L</a></h5>
+              </div>
+              <div class="col-lg-3 col-md-4 d-flex align-items-end justify-content-md-start justify-content-center">
+                <div class="product-count mb-0">
+                  <span class="decrement">
+                    <i class="fal fa-minus"></i>
+                  </span>
+                  <input type="text" value="1" min="0" readonly="readonly">
+                  <span class="increment">
+                    <i class="fal fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-4 d-flex align-items-md-end flex-md-column justify-content-md-between cart-product__footer">
+                <div class="d-flex flex-column cart-product__icons">
+                  <button class="delete-product"><i class="far fa-times"></i></button>
+                  <!-- <button class="add-product"><i class="far fa-heart"></i></button> -->
+                </div>
+                <h5 class="cart-product__price">12 320 сум</h5>
+              </div>
+            </div>
+          </div>
+          <div class="cart-product py-3 border-bottom">
+            <div class="row">
+              <div class="col-lg-6 col-md-4 d-flex align-items-md-end flex-md-row flex-column">
+                <div class="cart-product__img"><img src="img/product-3.png" alt="product image"></div>
+                <h5 class="cart-product__title mt-3"><a href="product-item.html">Banana Royal mini, weight 1kg</a></h5>
+              </div>
+              <div class="col-lg-3 col-md-4 d-flex align-items-end justify-content-md-start justify-content-center">
+                <div class="product-count mb-0">
+                  <span class="decrement">
+                    <i class="fal fa-minus"></i>
+                  </span>
+                  <input type="text" value="1" min="0" readonly="readonly">
+                  <span class="increment">
+                    <i class="fal fa-plus"></i>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-4 d-flex align-items-md-end flex-md-column justify-content-md-between cart-product__footer">
+                <div class="d-flex flex-column cart-product__icons">
+                  <button class="delete-product"><i class="far fa-times"></i></button>
+                  <!-- <button class="add-product"><i class="far fa-heart"></i></button> -->
+                </div>
+                <h5 class="cart-product__price">24 000 сум</h5>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="my-4 text-right">Общая сумма: 24 810 сумов</h4>
+
+          <div class="row">
+            <div class="col-12 ml-auto d-flex justify-content-end flex-md-row flex-column">
+              <button type="button" class="btn px-md-5 btn-danger mr-2 mb-md-0 mb-3">Сбросить корзину</button>
+              <button type="submit" class="btn px-md-5 btn-dark">Оформить заказ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal fade" id="sing-in-1">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button class="close" data-dismiss="modal"><i class="fal fa-times"></i></button>
+                  <h4 class="modal-title">Авторизация</h4>
+              </div>
+              <div class="modal-body">
+                  <form action="" class="px-md-5 pb-4 my-form">
+                      <div class="form-group mb-0">
+                          <label for="phone-for-auth">Номер телефона</label>
+                          <input type="tel" class="phone" placeholder="+998" id="phone-for-auth" required>
+                      </div>
+  
+                      <div class="d-flex justify-content-between mt-4">
+                          <button type="button" class="btn btn-danger" data-dismiss="modal">Отмена</button>
+                          <button type="submit" class="btn btn-dark">Получить код</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="modal fade" id="sing-in-2">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button class="close" data-dismiss="modal"><i class="fal fa-times"></i></button>
+                  <h4 class="modal-title">Авторизация</h4>
+              </div>
+              <div class="modal-body">
+                  <form action="" class="px-md-5 pb-4 my-form">
+                      <div class="form-group mb-0">
+                          <label for="phone-for-auth-accept">Номер телефона</label>
+                          <input type="tel" class="phone" placeholder="+998 __ ___ __ __" id="phone-for-auth-accept"
+                              required>
+                          <div class="text-right">
+                              <a href="#" class="resend-phone">Отправить еще раз</a>
+                          </div>
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="pwd">Введите код из СМС</label>
+                          <input type="password" class="" placeholder="*** ***" id="pwd" required>
+                      </div>
+  
+                      <div class="d-flex justify-content-between mt-4">
+                          <button type="button" class="btn btn-danger" data-dismiss="modal">Отмена</button>
+                          <button type="submit" class="btn btn-dark">Далее</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="modal fade" id="address-edit">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button class="close" data-dismiss="modal"><i class="fal fa-times"></i></button>
+                  <h4 class="modal-title">Редактирование адреса</h4>
+              </div>
+              <div class="modal-body">
+                  <form action="" class="px-md-3 pb-4 my-form">
+                      <div class="container px-md-3 px-0">
+                          <div class="row">
+                              <div class="col-lg-6 mb-4">
+                                  <div class="form-group mb-0">
+                                      <label for="address-name">Название*</label>
+                                      <input type="text" id="address-name" value="Home" required>
+                                  </div>
+                              </div>
+                              <div class="col-lg-6 mb-4">
+                                  <div class="form-group mb-0">
+                                      <label for="address-city">Город*</label>
+                                      <input type="text" id="address-city" value="Tashkent" required>
+                                  </div>
+                              </div>
+                              <div class="col-lg-6 mb-4">
+                                  <div class="form-group mb-0">
+                                      <label for="address-district">Район*</label>
+                                      <input type="text" id="address-district" value="Yunusabad" required>
+                                  </div>
+                              </div>
+                              <div class="col-lg-6 mb-4">
+                                  <div class="form-group mb-0">
+                                      <label for="address-square">Адрес*</label>
+                                      <input type="text" id="address-square" value="Farobiy 9" required>
+                                  </div>
+                              </div>
+  
+                              <div class="col-lg-6">
+                                  <div class="form-group mb-0">
+                                      <label for="address-map">Показать на карте</label>
+                                      <iframe
+                                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890.4327072440309!2d69.2867351755642!3d41.351338959308414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x814daf005243d522!2sUmbrella%20Soft!5e0!3m2!1suz!2s!4v1608287287561!5m2!1suz!2s"
+                                          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                                          aria-hidden="false" tabindex="0"></iframe>
+                                  </div>
+                              </div>
+                              <div class="col-lg-6 mt-md-0 mt-4">
+                                  <div class="row w-100 h-100 m-0">
+                                      <div class="col-lg-8 h-100 w-100 ml-auto p-0">
+                                          <div class="d-flex flex-column align-items-end justify-content-end w-100 h-100 mb-2">
+                                              <button type="submit" class="btn btn-dark w-100 mb-3">Сохранить изменения</button>
+                                              <a href="#" class="btn btn-danger w-100 d-flex justify-content-center align-items-center">Удалить адрес</a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="modal fade" id="address-add">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button class="close" data-dismiss="modal"><i class="fal fa-times"></i></button>
+                  <h4 class="modal-title">Добавить адрес</h4>
+              </div>
+              <div class="modal-body">
+                  <form action="" class="px-md-3 pb-4 my-form">
+                      <div class="container px-md-3 px-0">
+                          <div class="row">
+                              <div class="col-lg-6 mb-4">
+                                  <div class="form-group mb-0">
+                                      <label for="address-name2">Название*</label>
+                                      <input type="text" id="address-name2" value="" required>
+                                  </div>
+                              </div>
+                              <div class="col-lg-6 mb-4">
+                                  <div class="form-group mb-0">
+                                      <label for="address-city2">Город*</label>
+                                      <input type="text" id="address-city2" value="" required>
+                                  </div>
+                              </div>
+                              <div class="col-lg-6 mb-4">
+                                  <div class="form-group mb-0">
+                                      <label for="address-district2">Район*</label>
+                                      <input type="text" id="address-district2" value="" required>
+                                  </div>
+                              </div>
+                              <div class="col-lg-6 mb-4">
+                                  <div class="form-group mb-0">
+                                      <label for="address-square2">Адрес*</label>
+                                      <input type="text" id="address-square2" value="" required>
+                                  </div>
+                              </div>
+  
+                              <div class="col-lg-6">
+                                  <div class="form-group mb-0">
+                                      <label for="address-map2">Показать на карте</label>
+                                      <iframe
+                                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890.4327072440309!2d69.2867351755642!3d41.351338959308414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x814daf005243d522!2sUmbrella%20Soft!5e0!3m2!1suz!2s!4v1608287287561!5m2!1suz!2s"
+                                          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                                          aria-hidden="false" tabindex="0"></iframe>
+                                  </div>
+                              </div>
+                              <div class="col-lg-6 mt-md-0 mt-4">
+                                  <div class="row w-100 h-100 m-0">
+                                      <div class="col-lg-8 h-100 w-100 ml-auto p-0">
+                                          <div class="d-flex flex-column align-items-end justify-content-end w-100 h-100 mb-2">
+                                              <button type="submit" class="btn btn-dark w-100 mb-3">Сохранить</button>
+                                              <button data-dismiss="modal" class="btn btn-danger w-100 d-flex justify-content-center align-items-center">Отмена</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="modal fade" id="basket">
+      <div class="modal-dialog modal-dialog-centered modal-xl modal-xxl">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button class="close" data-dismiss="modal"><i class="fal fa-times"></i></button>
+                  <h4 class="modal-title">Корзина</h4>
+              </div>
+              <div class="modal-body">
+                  <div class="container pb-3">
+                      <div class="cart-product py-3 border-bottom">
+                          <div class="row">
+                              <div class="col-lg-6 col-md-4 d-flex align-items-md-end flex-md-row flex-column">
+                                  <div class="cart-product__img"><img src="img/product-1.png" alt="product image"></div>
+                                  <h5 class="cart-product__title mt-3"><a href="product-item.html">Drink Fanta sugar free
+                                          1.5L</a></h5>
+                              </div>
+                              <div
+                                  class="col-lg-3 col-md-4 d-flex align-items-end justify-content-md-start justify-content-center">
+                                  <div class="product-count mb-0">
+                                      <span class="decrement">
+                                          <i class="fal fa-minus"></i>
+                                      </span>
+                                      <input type="text" value="1" min="0" readonly="readonly">
+                                      <span class="increment">
+                                          <i class="fal fa-plus"></i>
+                                      </span>
+                                  </div>
+                              </div>
+                              <div
+                                  class="col-lg-3 col-md-4 d-flex align-items-md-end flex-md-column justify-content-md-between cart-product__footer">
+                                  <div class="d-flex flex-column cart-product__icons">
+                                      <button class="delete-product"><i class="far fa-times"></i></button>
+                                  </div>
+                                  <h5 class="cart-product__price">12 320 сум</h5>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="cart-product py-3 border-bottom">
+                          <div class="row">
+                              <div class="col-lg-6 col-md-4 d-flex align-items-md-end flex-md-row flex-column">
+                                  <div class="cart-product__img"><img src="img/product-3.png" alt="product image"></div>
+                                  <h5 class="cart-product__title mt-3"><a href="product-item.html">Banana Royal mini,
+                                          weight
+                                          1kg</a></h5>
+                              </div>
+                              <div
+                                  class="col-lg-3 col-md-4 d-flex align-items-end justify-content-md-start justify-content-center">
+                                  <div class="product-count mb-0">
+                                      <span class="decrement">
+                                          <i class="fal fa-minus"></i>
+                                      </span>
+                                      <input type="text" value="1" min="0" readonly="readonly">
+                                      <span class="increment">
+                                          <i class="fal fa-plus"></i>
+                                      </span>
+                                  </div>
+                              </div>
+                              <div
+                                  class="col-lg-3 col-md-4 d-flex align-items-md-end flex-md-column justify-content-md-between cart-product__footer">
+                                  <div class="d-flex flex-column cart-product__icons">
+                                      <button class="delete-product"><i class="far fa-times"></i></button>
+                                  </div>
+                                  <h5 class="cart-product__price">24 000 сум</h5>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <h4 class="my-4 text-right">Общая сумма: 24 810 сумов</h4>
+  
+                      <div class="row">
+                          <div class="col-12 ml-auto d-flex justify-content-end flex-md-row flex-column">
+                              <a href="order.html"
+                                  class="btn px-md-5 btn-dark d-flex justify-content-center align-items-center">Оформить</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <script src="libs/jquery/jquery.min.js"></script>
+  <script src="libs/popper/popper.min.js"></script>
+  <script src="libs/bootstrap/bootstrap.min.js"></script>
+  <script src="libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+  <script src="libs/swiper/js/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

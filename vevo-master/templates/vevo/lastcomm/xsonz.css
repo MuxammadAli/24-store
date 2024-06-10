@@ -1,0 +1,23 @@
+
+.easyTooltip {
+	padding: 5px 8px;
+	background-color: #f5f5ef;
+	font-size:10px;
+	color: #000;
+	border:1px solid #a1a4a6;
+	line-height: 14px;
+
+	max-width: 350px;
+	z-index: 999;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#easyTooltip {
+	background: url('images/tooltip.png') no-repeat left center;
+	padding-left: 5px;
+	position: relative;
+	z-index: 999;
+}

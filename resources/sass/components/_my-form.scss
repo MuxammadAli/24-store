@@ -1,0 +1,58 @@
+.my-form {
+  .resend-phone {
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration-line: underline;
+    color: $dark;
+    opacity: 0.7;
+  }
+}
+
+form {
+  input,
+  textarea,
+  select {
+    border: 1px solid rgba(140, 140, 140, 0.3);
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+  }
+
+  label {
+    font-weight: 600;
+    font-size: 14px;
+    color: $dark;
+    opacity: 0.7;
+  }
+
+  select {
+    background: url(../img/chevron-down.svg) no-repeat;
+    background-position: right 20px center; /* Change the px value here to change the distance */
+    -moz-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+  }
+}
+
+.payments {
+  img {
+    margin-top: -10px;
+  }
+}
+
+.genders {
+  label {
+    span {
+      position: relative;
+      top: -2px;
+    }
+  }
+}

@@ -1,0 +1,409 @@
+// CSS3-Prefix
+@mixin css3-prefix($prop, $value) {
+  -webkit-#{$prop}: #{$value};
+  -moz-#{$prop}: #{$value};
+  -ms-#{$prop}: #{$value};
+  -o-#{$prop}: #{$value};
+  #{$prop}: #{$value};
+}
+
+// div {
+//   @include css3-prefix(transform, scale3d(2.5, 2, 1.5)); 
+// }
+// 
+@mixin text-clamp($clamp, $height:auto) {
+  -webkit-line-clamp: $clamp;
+  height: $height;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+// Fonts
+@mixin font-face($name, $file) {
+  @font-face {
+    font-family: #{$name};
+    src: url("../fonts/Qanelas/#{$file}.ttf") format("truetype");
+    
+    // src: url("../fonts/Qanelas/#{$file}.eot");
+    // src: url("../fonts/Qanelas/#{$file}.eot?#iefix") format("embedded-opentype"),
+    // url("../fonts/Qanelas/#{$file}.woff") format("woff"),
+    // url("../fonts/Qanelas/#{$file}.ttf") format("truetype"),
+    // url("../fonts/Qanelas/#{$file}.svg?#webfont") format("svg");
+  }
+}
+
+// @include font-face("My Font", my-font);
+
+
+
+// Keyframes
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+// Absolute Position
+@mixin abs-position ($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+// div {
+//   @include abs-position(100px, 100px, auto, auto);
+// }
+
+
+
+// Retina Image
+@mixin retina-image($image, $width, $height) {
+
+  @media (min--moz-device-pixel-ratio: 1.3),
+  (-o-min-device-pixel-ratio: 2.6/2),
+  (-webkit-min-device-pixel-ratio: 1.3),
+  (min-device-pixel-ratio: 1.3),
+  (min-resolution: 1.3dppx) {
+    background-image: url($image);
+    background-size: $width $height;
+  }
+}
+
+// .image {
+//   background: url("my-image.png") no-repeat;
+//   @include retina-image("my-image2x.png", 1000px, 500px);
+// }
+
+
+
+
+// Arrows
+@mixin arrow($direction: down, $size: 5px, $color: #555) {
+  width: 0;
+  height: 0;
+
+  @if ($direction==left) {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-right: $size solid $color;
+  }
+
+  @else if ($direction==right) {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+  }
+
+  @else if ($direction==down) {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: $size solid $color;
+  }
+
+  @else {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: $size solid $color;
+  }
+}
+
+// without arguments (default)
+// div {
+//   @include arrow();
+// }
+
+// with custom arguments
+// div {
+//   @include arrow(up, 10px, #efefef);
+// }
+
+
+// Aspect ratio
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+
+  >.inner-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+// <!-- HTML -->
+// <div class="outer-box">
+//    <div class="inner-box"></div>
+// </div>
+
+// SCSS
+// .outer-box {
+//   @include aspect-ratio(4, 3);
+// }
+
+
+// Media Queries
+$breakpoints: (
+  "phone-smallest": 251px,
+  "phone-small": 321px,
+  "phone": 400px,
+  "phone-wide": 480px,
+  "phablet": 560px,
+  "tablet-small": 640px,
+  "tablet": 768px,
+  "tablet-wide": 1024px,
+  "desktop": 1248px,
+  "desktop-wide": 1440px,
+  "desktop-large": 2500px
+  );
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+
+    @if $type==max {
+      $width: $width - 1px;
+    }
+
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+
+//   @include mq('tablet-wide') {
+//       padding-top: 4rem;
+//       font-size: 2.4rem;
+//   }
+
+
+// Z-index
+@function z($name) {
+  @if index($z-indexes, $name) {
+    @return (length($z-indexes) - index($z-indexes, $name))+1;
+  }
+
+  @else {
+    @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+    @return null;
+  }
+}
+
+$z-indexes: ("outdated-browser",
+  "modal",
+  "site-header",
+  "page-wrapper",
+  "site-footer"
+);
+// .site-header {
+//   z-index: z('site-header');
+// }
+
+
+// Perspective
+@mixin hardware($backface: true, $perspective: 1000) {
+  @if $backface {
+    backface-visibility: hidden;
+  }
+
+  perspective: $perspective;
+}
+
+
+// Box
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+
+// Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+// .fade {
+//   @include opacity(.4);
+// }
+
+// Font Size
+@mixin font-size($size, $base: 16) {
+  font-size: $size; // fallback for old browsers
+  font-size: ($size / $base) * 1rem;
+}
+// body {
+//   @include font-size(16);
+// }
+
+// p {
+//   @include font-size(12, 10);
+// }
+
+
+// Gradients
+@mixin gradient($start-color, $end-color, $orientation) {
+  background: $start-color;
+
+  @if $orientation=='vertical' {
+    background: -webkit-linear-gradient(top, $start-color, $end-color);
+    background: linear-gradient(to bottom, $start-color, $end-color);
+  }
+
+  @else if $orientation=='horizontal' {
+    background: -webkit-linear-gradient(left, $start-color, $end-color);
+    background: linear-gradient(to right, $start-color, $end-color);
+  }
+
+  @else {
+    background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
+    background: radial-gradient(ellipse at center, $start-color, $end-color);
+  }
+}
+// .gradient {
+//   @include gradient(#07c, #06f, vertical);
+// }
+
+
+// Define vertical, horizontal, or both position
+@mixin center($position) {
+  position: absolute;
+
+  @if $position=='vertical' {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  @else if $position=='horizontal' {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+  }
+
+  @else if $position=='both' {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+// Using the mixin
+// .foo {
+//   @include center(both);
+// }
+// .foo-parent {
+//   position: relative;
+// }
+
+//Padding mixin
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
+//Margin mixin
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+//Usage definition
+// @include padding(top, right, bottom, left);
+// @include margin(top, right, bottom, left);
+//Usage 1
+// @include padding(1px, 2px, 3px, 4px);
+// @include margin(1px, 2px, 3px, 4px);
+//Output 1
+// padding: 1px 2px 3px 4px;
+// margin: 1px 2px 3px 4px;
+//Usage 2 (with null properties)
+// @include padding(1px, null, 3px, 4px);
+// @include margin(1px, 2px, null, 4px);
+//Output 2
+// padding-top: 1px;
+// padding-bottom: 3px;
+// padding-left: 4px;
+// margin-top: 1px;
+// margin-right: 2px;
+// margin-left: 4px;
+
+// PLACEHOLDER 
+%btn {
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+  font-size: 14px;
+  width: 150px;
+  margin: 5px 0;
+  text-align: center;
+  display: block;
+}
+
+/* BUTTON MIXIN 
+============================================= */
+
+@mixin btn-background($btn-background) {
+  @extend %btn;
+  background-color: $btn-background;
+
+  &:hover {
+    background-color: lighten($btn-background, 10%);
+  }
+}
+
+// BUTTONS
+
+// .cta-btn {
+//   @include btn-background(green);
+// }
+
+// .main-btn {
+//   @include btn-background(orange);
+// }
+
+// .info-btn {
+//   @include btn-background(blue);
+// }
+
+
+@mixin center-vertically {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include prefix(transform, translate(-50%, -50%), 'webkit''ms');
+}
+
+// .vc-box {
+//   @include center-vertically;
+// }

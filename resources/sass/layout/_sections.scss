@@ -1,0 +1,61 @@
+.products,
+.section-news {
+  padding-top: 30px;
+}
+
+.section-news {
+  padding-bottom: 50px;
+}
+
+.section-all-product, .section-cabinet {
+  .container {
+    & > .row {
+      & > div {
+        @include mq('tablet-wide', max) {
+          position: unset;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .row-products {
+    margin-left: -6px;
+    margin-right: -6px;
+
+    @include mq('tablet-wide', max) {
+      margin-top: 30px;
+    }
+
+    & > div {
+      padding-left: 6px;
+      padding-right: 6px;
+
+      margin-bottom: 15px;
+      @include mq('phablet', max) {
+        .product {
+          &-title {
+            font-size: 14px;
+          }
+
+          &-subtitle {
+            font-size: 12px;
+          }
+
+          &-footer {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          &-price {
+            margin-bottom: 5px;
+          }
+
+          button {
+            // align-self: center;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

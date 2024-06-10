@@ -1,0 +1,84 @@
+.head_wrap{
+  height:450px;
+  position:relative;
+}
+
+.head_arrow{
+  height:450px;
+  width:44px;
+  background: url('../images/arrow.png') 0px 50% no-repeat;
+  position:absolute;
+  cursor:pointer;
+}
+
+.head_left{
+  left:20px;
+}
+
+.head_right{
+  right:20px;
+  background-position:100% 50%;
+}
+
+.head_nav{
+  position:absolute;
+  height:40px;
+  top:20px;
+  right:100px;
+}
+
+.head_bounce{
+  width:15px;
+  height:15px;
+  float:left;
+  background:none;
+  border:1px solid #fff;
+  border-radius:50%;
+  margin-right:4px;
+}
+
+.head_active_bounce{
+  background:#fff;
+}
+
+.head_bg_wrap{
+  height:450px;
+  overflow:hidden;
+}
+
+.head_bg{
+  height:450px;
+}
+
+.head_slide{
+  height:450px;
+  float:left;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.head_text{
+  background-repeat:no-repeat;
+  height:280px;
+  width:550px;
+  margin:120px 0px 0px 330px;
+  padding-top:195px;
+  display:none;
+}
+.head_desc{
+  background-repeat:no-repeat;
+float:right;
+  height:280px;
+  width:550px;
+  margin:140px 0px 0px 330px;
+  padding-top:195px;
+  display:none;
+}
+
+.head_button{
+  display:block;
+  width:136px;
+  height:41px;
+  background: url('../images/Knopka.png') no-repeat;
+  margin:0px auto;
+}

@@ -1,0 +1,39 @@
+.modal {
+  &-content {
+    background: #ffffff;
+    border-radius: 20px;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  &-title {
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    color: $dark;
+  }
+
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+  }
+
+  .cart-product__img {
+    img {
+      max-width: 120px;
+    }
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 576px) {
+  .modal-dialog.modal-xxl {
+    max-width: unset;
+    margin: 1.75rem 15px;
+  }
+}

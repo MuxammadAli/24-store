@@ -1,0 +1,485 @@
+html,body{
+height:100%;
+margin:0px;
+padding: 0px;
+background: #FFFFFF;
+font-size: 11px;
+font-family: tahoma;
+}
+p {margin: 0; padding: 0;}
+
+table{
+background:transparent;
+border:0px;
+border-collapse:collapse;
+}
+table td{
+text-align:left;
+padding:0px;
+background:transparent;
+}
+select {
+	font-size: 11px;
+	font-family: tahoma;
+}
+
+.stext {
+	color: #727272;
+	font-size: 11px;
+	font-family: tahoma;
+}
+.stext a:active,
+.stext a:visited,
+.stext a:link {
+	color: #0084ff;
+	text-decoration:none;
+	}
+.stext a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+	}
+.ntitle {
+	color: #CC00FF;
+	font-size: 15px;
+	font-family: tahoma;
+	font-weight: bold;
+	padding:11px 0 0 6px;
+}
+.ntitle a {
+	color: #0084ff;
+	text-decoration: underline;
+}
+.ntitle a:hover {
+	text-decoration:none;
+	}
+.userstop{
+	font-family:Tahoma;
+	font-size:11px;
+	color:#606D77;
+}
+.userstop thead {
+	font-family:Tahoma;
+	font-size:10px;
+    font-weight: bold;
+	color:#505050;
+}
+.userstop td {
+	padding:0px;
+}
+.userstop a {
+	color: #userstop;
+	text-decoration:none;
+}
+.userstop a:hover {
+	text-decoration: underline;
+}
+/*------------------------------------------------------------------*/
+/* Стили используемые в DataLife Engine     			            */
+/*------------------------------------------------------------------*/
+
+form {  PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	PADDING-BOTTOM: 0px; 
+	MARGIN: 0px; 
+	PADDING-TOP: 0px;
+}
+
+/* 
+ * ========================================
+ * Вывод архива 
+ * ========================================
+ */
+.archives {
+	vertical-align: top;
+	text-align:center;
+	font-size:11px;
+	padding:10px 0px 10px 10px;
+	margin:0 0 0 40px;
+	
+}
+/* 
+ * ========================================
+ * Цитата и скрытый текст
+ * ========================================
+ */
+ .quote {
+color: #202020;
+font-size:12px;
+text-align:justify;
+padding: 5px;
+list-style:none;
+margin:5px 0;
+}
+.quote a{
+color:#0152a4;
+}
+.quote ul{
+list-style:none;
+}
+/* 
+ * ========================================
+ * Teг CODE
+ * ========================================
+ */
+ .scriptcode {
+color: #00a1ff;
+FONT: 11px Verdana; 
+text-align:left; 
+border:1px dashed #0084ff;
+padding: 5px;
+background:#f9f9f9; 
+}
+/* 
+ * ========================================
+ * Календарь 
+ * ========================================
+ */
+
+.day-current {
+background:#cacaca;
+font-weight:bold;
+color:#000;
+}
+.weekday-active-v {
+	color: #FF0000;
+	font-family:tahoma;
+	 font-size:11px;
+}
+.day-active-v {
+	color: #000000;
+	font-family:tahoma;
+	 font-size:11px;
+	 background:#dadada;
+}
+.calendar {
+	 font-family:verdana;
+	 font-size:11px;
+	 width:200px;
+
+}
+.calendar td, th {
+	 font-family:verdana;
+	 font-size:11px;
+	 text-decoration: none;
+	 padding: 3px;
+	 color:#606060;
+	 border-bottom:1px solid #bfbfbf;
+}
+
+.weekday {
+	color: #F40101;
+	font-family:verdana;
+	font-size:12px;
+}
+.weekday-active {
+	color: #000000;
+	font-family:verdana;
+	text-decoration:underline;
+}
+.day-active {
+	color: #000000;
+	font-family:verdana;
+	font-size:11px;
+	 background:#dadada;
+}
+.day-active a,
+.weekday-active a,
+.day-active-v a,
+.weekday-active-v a
+ {
+ font-size:13px;
+ color:#0090FF;
+text-decoration: underline;	
+}
+
+.monthlink{
+color:#fff;
+font-family:tahoma;
+font-size:14px;
+text-decoration: none;
+}
+.monthlink a {
+color:#e400ff;
+}
+
+/* 
+ * ========================================
+ * Рейтинг 
+ * ========================================
+ */
+
+.rating {
+
+		color: #666666;
+		font-family: Tahoma, helvetica, sans-serif;
+		font-size: 11px; 
+		height: 17px;
+		float:left;
+		
+	}
+
+/* 
+ * ========================================
+ * BB коды
+ * ========================================
+ */ 
+.editor{
+width:100%;
+}
+.bbcodes {
+	background: #505050 url(../images/bluestrip.png) center center repeat-x;
+	color: #FFFFFF;
+	font-family:Tahoma, helvetica, sans-serif;
+	padding: 0px 3px 3px 3px;
+	font-size: 12px; 
+	height: 18px;
+	border:1px solid #000;
+	
+	
+}
+.bbcodes:hover{
+background:#0588DB;
+border:1px solid #0152a4;
+}
+
+/* 
+ * ========================================
+ * Дополнительные поля
+ * ========================================
+ */ 
+
+.xfields textarea {
+width:400px; 
+height:90px; 
+font-family:verdana; 
+font-size:11px; 
+border:1px solid #5BBFFF;
+
+}
+.xfields input {
+width:250px; 
+height:18px; 
+font-family:verdana; 
+font-size:11px; 
+border:1px solid #5BBFFF;
+}
+.xfields select {
+height:18px; 
+font-family:verdana; 
+font-size:11px; 
+border:1px solid #5BBFFF;
+}
+
+/* 
+ * ========================================
+ * Персональные сообщения
+ * ========================================
+ */ 
+
+.pm_head {
+	FONT: 10pt Verdana; 
+
+}
+.pm_list {
+	color: #000000;
+	font-size: 11px;
+	font-family: tahoma;
+	}
+.pm_list a {
+	color: #0084ff;
+	font-size: 11px;
+	font-family: tahoma;
+}
+
+/* 
+ * ========================================
+ * Выпадающее меню
+ * ========================================
+ */ 
+
+#dropmenudiv {
+	border: 1px solid #303030;
+	font: normal 10px Verdana;
+	background:#717375 url(../images/bg5.png) repeat-x;
+	line-height: 20px;
+	margin: 2px;
+	opacity: 0.85;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95) progid:DXImageTransform.Microsoft.Shadow(color=#cacaca, direction=135, strength=3)";
+	filter: alpha(opacity=95, enabled=1) progid:DXImageTransform.Microsoft.Shadow(color=#cacaca, direction=135, strength=3);
+}
+
+#dropmenudiv a {
+font-size:10px;
+	display: block;
+	text-indent: 3px;
+	text-decoration:none;
+	color: #ffffff;
+	border: 1px solid #fff;
+	padding: 1px 0;
+	margin: 1px;
+	font-weight: bold;
+}
+
+#dropmenudiv a:hover {
+	background:#000000;
+	color:#e400ff;
+	opacity: 0.99;
+}
+
+/* 
+ * ========================================
+ * Результаты поиска
+ * ========================================
+ */
+
+.sresult  {
+	text-align: justify;
+	font-family:verdana;
+    FONT-WEIGHT: normal;
+    LINE-HEIGHT: 16px;
+	font-size:12px;
+	color:#393939;
+}
+
+/* 
+ * ========================================
+ * Опрос
+ * ========================================
+ */
+
+.vote{
+color: #606060;
+font-size: 12px;
+line-height:150%;
+margin:auto;
+}
+#question{
+width:188px;
+padding:5px;
+color:#009cff;
+font-size:13px;
+text-align:center;
+border:1px solid #a7d3f0;
+background:#d7e7f1;
+}
+/* ==================== Тег SPOILER */
+
+.title_spoiler {
+	color: #303030;
+	background:#e1e1e1; 
+
+	font-weight: bold;
+	padding: 5px;
+
+}
+.text_spoiler {
+	margin:10px; 
+	color: #303030;
+	font-size:12px;
+	text-align:justify;
+	background:#f9f9f9; 
+	border: 1px solid #e1e1e1;
+	padding: 5px;
+}
+.title_spoiler a{
+color:#303030;
+}
+.title_spoiler img {
+	margin: 0; padding: 0;
+}
+
+/*---подсветка текста в теге [code]---*/
+
+pre code {
+  display: block; padding: 0.5em;
+  background: #f9fafa; 
+  border: 1px solid #dce7e7;
+  overflow:auto;
+  white-space: pre;
+}
+
+pre .comment,
+pre .template_comment,
+pre .diff .header,
+pre .doctype,
+pre .lisp .string,
+pre .javadoc {
+  color: #93a1a1;
+  font-style: italic;
+}
+
+pre .keyword,
+pre .css .rule .keyword,
+pre .winutils,
+pre .javascript .title,
+pre .method,
+pre .addition,
+pre .css .tag,
+pre .lisp .title {
+  color: #859900;
+}
+
+pre .number,
+pre .command,
+pre .string,
+pre .tag .value,
+pre .phpdoc,
+pre .tex .formula,
+pre .regexp,
+pre .hexcolor {
+  color: #2aa198;
+}
+
+pre .title,
+pre .localvars,
+pre .function .title,
+pre .chunk,
+pre .decorator,
+pre .builtin,
+pre .built_in,
+pre .lisp .title,
+pre .identifier,
+pre .title .keymethods,
+pre .id {
+  color: #268bd2;
+}
+
+pre .tag .title,
+pre .rules .property,
+pre .django .tag .keyword {
+  font-weight: bold;
+}
+
+pre .attribute,
+pre .variable,
+pre .instancevar,
+pre .lisp .body,
+pre .smalltalk .number,
+pre .constant,
+pre .class .title,
+pre .parent,
+pre .haskell .label {
+  color: #b58900;
+}
+
+pre .preprocessor,
+pre .pi,
+pre .shebang,
+pre .symbol,
+pre .diff .change,
+pre .special,
+pre .keymethods,
+pre .attr_selector,
+pre .important,
+pre .subst,
+pre .cdata {
+  color: #cb4b16;
+}
+
+pre .deletion {
+  color: #dc322f;
+}
+
+pre .tex .formula {
+  background: #eee8d5;
+}

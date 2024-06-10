@@ -1,0 +1,14 @@
+{
+    "name": "27seven",
+    "short_name": "27seven",
+    "icons": [
+        {
+            "src": "android-chrome-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#10182b",
+    "background_color": "#10182b",
+    "display": "standalone"
+}

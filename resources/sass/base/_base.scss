@@ -1,0 +1,139 @@
+html {
+  scroll-behavior: smooth;
+
+  font-family: "Golos", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+* {
+  &::selection {
+    // background-color: $my-color;
+    // color: white;
+  }
+}
+
+a {
+  @extend %tr02;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+* {
+  outline: none !important;
+  &::selection {
+    // background-color: $big-menu-color;
+    // color: white;
+  }
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+button:focus {
+  outline: none !important;
+  outline: 0 auto -webkit-focus-ring-color;
+}
+
+.form-control:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.input-group > .custom-file .custom-file-input:focus ~ .custom-file-label,
+.input-group > .custom-select:focus,
+.input-group > .form-control:focus {
+  z-index: 0;
+}
+
+.btn-dark:not(:disabled):not(.disabled).active:focus,
+.btn-dark:not(:disabled):not(.disabled):active:focus,
+.show > .btn-dark.dropdown-toggle:focus {
+  box-shadow: 0;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  max-width: 1440px;
+}
+
+.shadow {
+  box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+.rounded {
+  border-radius: 8px !important;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+@include mq("tablet-wide", min) {
+  body {
+    &.is-active {
+      header,
+      main,
+      .navbar,
+      .navbar-second,
+      footer {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 111;
+        }
+      }
+    }
+    .big-menu-dropdown-trigger {
+      position: relative;
+      z-index: 1000;
+    }
+  }
+}
+
+@include mq("tablet-wide", max) {
+  body {
+    position: relative;
+
+    &.is-actived {
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+      .top-navbar {
+        z-index: 111;
+      }
+      &::after {
+        position: absolute;
+        transition: all 0.3s ease;
+        content: "";
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 111;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(51, 51, 51, 0.432);
+        backdrop-filter: blur(1px);
+      }
+    }
+  }
+}

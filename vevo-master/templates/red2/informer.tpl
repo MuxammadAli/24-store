@@ -1,0 +1,1 @@
+[link]<b>{title}</b>[/link]<br /><br />{news}<br /><br />  

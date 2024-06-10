@@ -1,0 +1,23 @@
+#ns_tt{  
+position: absolute;  
+border: solid #AAAAAA 1px;  
+background-color: #DDDDDD;  
+font-family: Tahoma, sans-serif;  
+font-size: 11px;  
+line-height: 16px;  
+padding: 2px 5px;  
+overflow: hidden;  
+margin: 25px 2px 0px 5px;  
+margin-left: -80px; /*меняйте цифры, если хотите сдвинуть окно*/
+	max-width: 350px;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+	
+    filter:alpha(opacity=90);
+    -moz-opacity: 0.9; 
+    -khtml-opacity: 0.9; 
+    opacity: 0.9; 
+z-index:1000;
+} 
