@@ -1,1 +1,0 @@
-<div class="basecont ignore-select"><div class="navigation" align="center" ><b class="prev">[prev-link]&larr;[/prev-link]</b> {pages} <b class="next">[next-link]&rarr;[/next-link]</b></div></div> 
